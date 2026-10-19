@@ -1,0 +1,17 @@
+/.venv
+/Atrapa-Al-Estudiante-LINUX.spec
+/AtrapaAlJugador.spec
+/Proyecto Programado #3.pdf
+/__pycache__
+/assets
+/build
+/build.bat
+/build.sh
+/config.py
+/dist
+/logic
+/main.py
+/models
+/requirements.txt
+/utils
+/views
