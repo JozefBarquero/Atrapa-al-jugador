@@ -1,5 +1,5 @@
 @echo off
-title Empaquetador Atrapa al Estudiante (Windows)
+title Empaquetador Atrapa al Jugador (Windows)
 color 0B
 echo ===================================================
 echo   Iniciando proceso de empaquetado para Windows
@@ -34,7 +34,7 @@ echo.
 echo Limpiando archivos temporales anteriores...
 if exist "build" rmdir /s /q "build"
 if exist "dist" rmdir /s /q "dist"
-if exist "Atrapa-Al-Estudiante-WINDOWS.spec" del /q "Atrapa-Al-Estudiante-WINDOWS.spec"
+if exist "Atrapa-Al-Jugador-WINDOWS.spec" del /q "Atrapa-Al-Jugador-WINDOWS.spec"
 
 :: 5. Empaquetar con PyInstaller
 echo.
@@ -47,20 +47,20 @@ set "PATH=%GTK_PATH%;%PATH%"
 
 
 pyinstaller --noconfirm --clean --onefile --windowed ^
-    --name "Atrapa-Al-Estudiante-WINDOWS" ^
+    --name "Atrapa-Al-Jugador-WINDOWS" ^
     --add-data "assets;assets" ^
     --collect-all cairosvg ^
     main.py
 
 :: 6. Comprobar resultado
 echo.
-if exist "dist\Atrapa-Al-Estudiante-WINDOWS.exe" (
+if exist "dist\Atrapa-Al-Jugador-WINDOWS.exe" (
     color 0A
     echo ===================================================
     echo   ¡Empaquetado completado con exito!
     echo ===================================================
     echo.
-    echo Tu ejecutable esta en: dist\Atrapa-Al-Estudiante-WINDOWS.exe
+    echo Tu ejecutable esta en: dist\Atrapa-Al-Jugador-WINDOWS.exe
 ) else (
     color 0C
     echo [ERROR] Hubo un problema durante el empaquetado.

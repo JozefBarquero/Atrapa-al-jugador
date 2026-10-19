@@ -27,23 +27,23 @@ pip install pyinstaller
 
 
 echo -e "${BLUE}Limpiando archivos temporales anteriores...${NC}"
-rm -rf build dist Atrapa-Al-Estudiante-LINUX.spec
+rm -rf build dist Atrapa-Al-Jugador-LINUX.spec
 
 
 echo -e "${BLUE}Empaquetando el juego (esto puede tardar un momento)...${NC}"
 
 pyinstaller --noconfirm --clean --onefile --windowed \
-    --name "Atrapa-Al-Estudiante-LINUX" \
+    --name "Atrapa-Al-Jugador-LINUX" \
     --add-data "assets:assets" \
     main.py
 
 
-if [ -f "dist/Atrapa-Al-Estudiante-LINUX" ]; then
+if [ -f "dist/Atrapa-Al-Jugador-LINUX" ]; then
     echo -e "${GREEN}=== ¡Empaquetado completado con éxito! ===${NC}"
-    echo -e "Puedes encontrar tu ejecutable en: ${GREEN}dist/Atrapa-Al-Estudiante-LINUX${NC}"
+    echo -e "Puedes encontrar tu ejecutable en: ${GREEN}dist/Atrapa-Al-Jugador-LINUX${NC}"
     echo -e "Puedes copiar este archivo a cualquier otra PC con Linux y ejecutarlo dando doble clic."
     
-    chmod +x dist/Atrapa-Al-Estudiante-LINUX
+    chmod +x dist/Atrapa-Al-Jugador-LINUX
 else
     echo -e "${RED}Hubo un error durante el empaquetado.${NC}"
 fi
