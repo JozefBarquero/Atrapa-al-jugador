@@ -1,0 +1,77 @@
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ASSETS_DIR = os.path.join(BASE_DIR, "assets")
+SOUNDS_DIR = os.path.join(ASSETS_DIR, "sounds")
+
+WIDTH = 1200
+HEIGHT = 850
+FPS = 60
+
+COLOR_BG = (22, 28, 38)
+COLOR_PANEL = (32, 42, 55)
+COLOR_PANEL_DARK = (44, 56, 72)
+COLOR_EDGE = (75, 95, 115)
+COLOR_SHADOW = (10, 15, 22)
+COLOR_NODE = (55, 75, 95)
+COLOR_PLAYER = (130, 200, 230)
+COLOR_PLAYER_2 = (230, 160, 100)
+COLOR_COMPUTER = (180, 130, 200)
+COLOR_GOAL = (140, 220, 180)
+COLOR_TEXT = (225, 235, 245)
+COLOR_TEXT_LIGHT = (160, 180, 200)
+COLOR_BTN = (65, 85, 105)
+COLOR_BTN_HOVER = (85, 105, 125)
+COLOR_BTN_ACTIVE = (50, 65, 85)
+COLOR_BTN_SELECTED = (80, 140, 160)
+COLOR_SUCCESS = (100, 200, 160)
+COLOR_DANGER = (220, 100, 120)
+COLOR_GOLD = (200, 200, 130)
+COLOR_OVERLAY = (0, 0, 0, 180)
+COLOR_INPUT_BG = (25, 33, 44)
+COLOR_INPUT_ACTIVE = (45, 60, 80)
+
+NODE_RADIUS = 30
+EDGE_WIDTH = 6
+
+DIFFICULTIES = {
+    "FACIL": {"rows": 3, "cols": 3, "enemies": 1, "name": "Fácil"},
+    "MEDIO": {"rows": 4, "cols": 4, "enemies": 2, "name": "Medio"},
+    "DIFICIL": {"rows": 5, "cols": 5, "enemies": 3, "name": "Difícil"},
+}
+
+EDITOR_MIN_ROWS = 3
+EDITOR_MAX_ROWS = 5
+EDITOR_MIN_COLS = 4
+EDITOR_MAX_COLS = 8
+EDITOR_MIN_ENEMIES = 1
+EDITOR_MAX_ENEMIES = 5
+
+ANIMATION_SPEED = 8.0
+BASE_SCORE = 1000
+SCORE_PER_MOVE = 15
+SCORE_PER_SECOND = 5
+
+SCREEN_MENU = "MENU"
+SCREEN_PLAYING = "PLAYING"
+SCREEN_GAMEOVER = "GAMEOVER"
+SCREEN_NAME_ENTRY = "NAME_ENTRY"
+SCREEN_GRAPH_EDITOR = "GRAPH_EDITOR"
+
+MODE_SINGLE = "SINGLE"
+MODE_MULTI = "MULTI"
+
+LINK_WIN = "https://opengameart.org/content/won-orchestral-winning-jingle"
+LINK_COIN = "https://opengameart.org/content/picked-coin-echo"
+LINK_GITHUB = "https://github.com/JozefBarquero/Atrapa-al-jugador"
+
+MENU_MUSIC_VOLUME = 0.6
+GAME_MUSIC_VOLUME = 0.6
+MUSIC_FADE_SPEED = 0.6
+MUSIC_DUCK_AMOUNT = 0.8
+MUSIC_DUCK_SPEED = 0.15
+MUSIC_UNDUCK_SPEED = 0.4
+MUSIC_MUTE_SPEED = 2.0
+
+TOP_HUD_HEIGHT = 80
+BOTTOM_PANEL_HEIGHT = 90
